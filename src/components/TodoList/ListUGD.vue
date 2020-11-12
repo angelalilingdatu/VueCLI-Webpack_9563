@@ -97,9 +97,7 @@
 
                 </v-card-actions>
             </v-card>
-        </v-dialog>
-
-                    
+        </v-dialog>    
         <v-dialog v-model="dialogdel" persistent max-width="400px">
             <v-card>
                 <v-card-title>
@@ -118,48 +116,9 @@
                     <v-btn color="red darken-1" text @click="confirmdelete">
                         Ya
                     </v-btn>
-
                 </v-card-actions>
-
             </v-card>
         </v-dialog>
-
-                    
-        <v-dialog v-model="dialognote" persistent max-width="400px">
-            <v-card>
-                <v-card-title>
-                    <span class="headline">
-                        {{detail.task}}
-                    </span>
-                </v-card-title>
-                
-                <v-card-text>
-                    <v-container>
-                        <v-chip v-if="detail.priority == 'Penting'" color="red" label outlined>
-                            {{ detail.priority }}
-                        </v-chip>
-                        <v-chip v-else-if="detail.priority == 'Biasa'" color="primary" label outlined>
-                            {{ detail.priority }}
-                        </v-chip>
-                        <v-chip v-else color="success" label outlined>
-                            {{ detail.priority }}
-                        </v-chip>
-                        <v-card>
-                            {{detail.note}}
-                        </v-card>
-                    </v-container>
-                </v-card-text>
-
-                <v-card-actions>
-                    <v-spacer></v-spacer>
-                    <v-btn color="red darken-1" text @click="cancel">
-                        Close
-                    </v-btn>
-                </v-card-actions>
-
-            </v-card>
-        </v-dialog>
-
     </v-main>
 </template>
 <script>
