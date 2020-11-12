@@ -1,5 +1,6 @@
 <template>
     <div class="dashboard">
+        
         <v-navigation-drawer class="fullheight" width="256" permanent app fixed>
             <v-list-item>
                 <v-list-item-content>
@@ -39,6 +40,7 @@ data() {
         items: [
             { title: "Dashboard", to: "/" },
             { title: "GD", to: "/gd" },
+            { title: "UGD", to: "/ugd" },
         ],
         };
     },
