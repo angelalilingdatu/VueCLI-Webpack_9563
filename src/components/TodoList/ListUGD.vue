@@ -215,14 +215,6 @@ export default {
             this.dialog = true;
             this.edititem = item;
         },
-        detailItem(item) {
-            this.detail = {
-                task: item.task,
-                priority: item.priority,
-                note: item.note,
-            }
-            this.dialognote = true;
-        },
         edit(formTodo) {
             this.edititem.task = formTodo.task;
             this.edititem.priority = formTodo.priority;
